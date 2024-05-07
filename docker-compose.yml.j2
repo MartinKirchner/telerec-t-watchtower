@@ -18,9 +18,9 @@ services:
       WATCHTOWER_HTTP_API_TOKEN: "{{ service_cfg.http_token }}"
       WATCHTOWER_HTTP_API_PERIODIC_POLLS: "true"
 {% endif %}
-{% if service_cfg.telegram_bot_token != "" %}
+{% if service_cfg.shoutrrr_url != "" %}
       WATCHTOWER_NOTIFICATIONS: "shoutrrr"
-      WATCHTOWER_NOTIFICATION_URL: "telegram://{{ service_cfg.telegram_bot_token }}@telegram/?channels={{ service_cfg.telegram_channel_id }}"
+      WATCHTOWER_NOTIFICATION_URL: "{{ service_cfg.shoutrrr_url }}"
 {% endif %}
     volumes:
       - "{{ service_cfg.directory }}:/config"
