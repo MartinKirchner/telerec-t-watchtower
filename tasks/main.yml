@@ -12,7 +12,6 @@
       version: "latest"
       poll_interval: 86400  # 24h
       http_token:           # disabled by default
-      telegram_bot_token:   # disabled by default
-      telegram_channel_id:  # disabled by default
+      shoutrrr_url: smtp://m06f54d2:Mg6fGstEHTsBzWiNtZzP@v129687.kasserver.com:587/?from=nas@m-kirchner.de&to=martin@m-kirchner.de
 
 
